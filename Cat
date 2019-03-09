@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pets
+{
+    class Cat : Pet
+    {
+        public Cat(string name, string owner, double weight)
+        {
+            base.type = "cat";
+            base.name = name;
+            base.owner = owner;
+            base.weight = weight;
+        }
+        public string meow(int count)
+        {
+            int i = 0;
+            string mow = "";
+            while (i < count)
+            {
+                mow = mow + "Meow.";
+                i++;
+            }
+            return mow;
+        }
+    }
+}
