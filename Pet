@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pets
+{
+    public class Pet
+    {
+        public string type { get; set; }
+        public string name { get; set; }
+        public string owner { get; set; }
+        public double weight { get; set; }
+        public Pet()    //Default constructor
+        {
+            this.type = "";
+            this.name = "";
+            this.owner = "";
+            this.weight = 0;
+        }
+        public Pet(string type, string name, string owner, double weight)
+        {
+            this.type = type;
+            this.name = name;
+            this.owner = owner;
+            this.weight = weight;
+        }
+        public string getTag()
+        {
+            return "If lost, return to " + this.owner;
+        }
+    }
+}
